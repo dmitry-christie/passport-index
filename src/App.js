@@ -17,21 +17,19 @@ function App() {
     const apiUrl = `https://mp2mjaut1pu90gf-passportindex.adb.eu-zurich-1.oraclecloudapps.com/ords/passportindex/country_data/`;
     fetch(apiUrl)
       .then((res) => res.json())
-      .then((repos) => {
-        setAppState({ loading: false, repos: repos });
+      .then((countries) => {
+        setAppState({ loading: false, countries: countries.items });
       });
   }, [setAppState]);
   return (
     <div className='App'>
       <div className='container'>
-        <h1>My Repositories</h1>
+        <h1>Global Passport Index </h1>
       </div>
-      <div className='repo-container'>
-        <ListLoading isLoading={appState.loading} repos={appState.repos} />
+      <div className='country-container'>
+        <ListLoading isLoading={appState.loading} countries={appState.countries} />
       </div>
-      <footer>
-        
-      </footer>
+      
     </div>
   );
 }

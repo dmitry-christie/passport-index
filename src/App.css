@@ -1,3 +1,6 @@
 .App {
   text-align: center;
 }
+.citizenships_table {
+  border: 1px solid grey;
+}
