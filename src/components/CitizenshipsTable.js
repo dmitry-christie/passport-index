@@ -29,14 +29,14 @@ const CitizenshipTable = (props) => {
           <tr key={country.id} className='list'>
             <td className='country_code'>{country.country_code} </td>
             <td className='repo-description'>{country.visa_free}</td>
-            <td className='repo-description'>{country.visa_arrival}</td>
-            <td className='repo-description'>{country.e_visa}</td>
-            <td className='repo-description'>{country.gdp_per_cap}</td>
-            <td className='repo-description'>{country.taxation}</td>
-            <td className='repo-description'>{country.taxation}</td>
-            <td className='repo-description'>{country.taxation}</td>
-            <td className='repo-description'>{country.taxation}</td>
-            <td className='repo-description'>{country.taxation}</td>
+            <td className='visa_arrival'>{country.visa_arrival}</td>
+            <td className='e_visa'>{country.e_visa}</td>
+            <td className='gdp_per_cap'>$ {country.gdp_per_cap}</td>
+            <td className='taxation'>{country.taxation}%</td>
+            <td className='vcpe_index'>{country.vcpe_index}</td>
+            <td className='cost_of_living'>{country.cost_of_living}</td>
+            <td className='hdi'>{country.hdi}</td>
+            <td className='freedom'>{country.freedom}</td>
 
           </tr>
         );
