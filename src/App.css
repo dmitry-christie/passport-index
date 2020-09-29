@@ -1,3 +1,25 @@
 .App {
   text-align: center;
+  width: 1080px;
+  max-width: 90%;
+  margin: 0 auto;
+
+}
+
+h1 {
+  font-family: 'Bigelow Rules';
+  font-size: 72px;
+  color: #0ccac4;
+}
+
+.tables-container {
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+}
+
+.profile-selectors {
+  display: flex;
 }
