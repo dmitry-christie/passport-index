@@ -23,3 +23,13 @@ h1 {
 .profile-selectors {
   display: flex;
 }
+
+.profile-selector {
+  color: white;
+  height: 28px;
+  padding: 10px; 
+  border: 1px solid white;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+}
