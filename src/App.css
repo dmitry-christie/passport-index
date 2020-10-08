@@ -6,6 +6,14 @@
 
 }
 
+.App p {
+  color: white;
+}
+
+.tables-container table p {
+  color: grey;
+}
+
 h1 {
   font-family: 'Bigelow Rules';
   font-size: 72px;
@@ -14,10 +22,12 @@ h1 {
 
 .tables-container {
   display: flex;
+  justify-content: center;
 }
 
 .header-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .profile-selectors {
@@ -32,4 +42,41 @@ h1 {
   vertical-align: center;
   display: flex;
   align-items: center;
+}
+
+.global-passport-scores {
+  width: 50%;
+}
+.living-scores {
+  width: 50%;
+}
+.global-passport-scores .card-list, .living-scores .card-list {
+  width: 100%;
+}
+
+.close {
+  color: white;
+  text-align: right;
+  text-decoration: none;
+  float: right;
+}
+
+.table-header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.table-header-text > p {
+  width: 100%;
+}
+
+.profile-selectors a{
+  text-decoration: none;
+}
+
+
+.freespace {
+  height: 1px;
 }

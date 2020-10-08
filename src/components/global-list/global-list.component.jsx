@@ -2,17 +2,18 @@ import React from 'react';
 
 import { Card } from '../card/card.component';
 
-import './card-list.styles.css';
+import './global-list.styles.css';
 
-export const CardList = props => (
-  
+export const GlobalList = props => (
+  <div className='global-passport-scores'>
+    <p>Global Passport Scores</p>
     <table className="card-list">
       <thead>
         <tr>
-         
-          <th>Visa Free</th>
-          <th>Visa Free</th>
-          <th>GDP</th>
+          <th>Country</th>
+          <th>Mobility</th>
+          <th>Investment</th>
+          <th>Living</th>
         </tr>
       </thead>
       <tbody>
@@ -21,5 +22,5 @@ export const CardList = props => (
         ))}
       </tbody>
     </table>
-  
+  </div>
 );
