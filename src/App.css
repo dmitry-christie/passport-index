@@ -1,11 +1,16 @@
 .App {
-  text-align: center;
+  
+  color: white;
+  background-color: #1d2733;
+
+}
+.container {
+  
   width: 1080px;
   max-width: 90%;
   margin: 0 auto;
-
+  
 }
-
 .App p {
   color: white;
 }
@@ -16,8 +21,8 @@
 
 h1 {
   font-family: 'Bigelow Rules';
-  font-size: 72px;
-  color: #0ccac4;
+  
+  color: white;
 }
 
 .tables-container {
@@ -79,4 +84,57 @@ h1 {
 
 .freespace {
   height: 1px;
+}
+
+
+
+#header {
+
+  display: flex;
+  background:#1d2733;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+#header .hamburger a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 1em;
+  font-size: 1.5em;
+}
+
+#header .left {
+  display: flex;
+  align-items: center;
+}
+
+#header .menu {
+  margin: 0px 1em;
+}
+
+
+#header li {
+  list-style: none;
+}
+
+#sidebar {
+  position: fixed;
+  height: 100%;
+  top: 0px;
+  z-index: 1;
+  background: #1a222e;
+}
+
+#sidebar ul {
+  margin-left: 1em 1em;
+  padding-left: 0px;
+  
+}
+
+#sidebar li {
+  list-style: none;
+  margin: 1em;
 }

@@ -4,6 +4,7 @@ import { CardList } from './components/card-list/card-list.component';
 import { GlobalList } from './components/global-list/global-list.component';
 import { CombinedScores } from './components/combined-scores/combined-scores.component';
 import { SearchBox } from './components/search-box/search-box.component';
+import logo from './assets/img/passport-index-logo.png';
 
 import './App.css';
 
@@ -46,7 +47,34 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <h1>Global Passport Index 2020</h1>
+        <div id="header" className='header'>
+          <div className='left'>          
+            <div className='hamburger'>
+                <a href="#">
+                  ☰
+                </a>
+            </div>
+            <div className='logo'>
+              <img src={logo} alt=""/>
+            </div>
+            
+          </div>
+          <div className='right'>
+            <ul className='language-switcher'>
+              <li>EN</li>
+            </ul>
+          </div>
+        </div>
+        <div id="sidebar" className='sidebar'>
+          <ul>
+            <li>Icon</li>
+            <li>Icon</li>
+            <li>Icon</li>
+            <li>Icon</li>
+            <li>Icon</li>
+          </ul>
+        </div>
+        <div className='container'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue tellus urna, sed interdum augue vulputate tristique. Morbi iaculis sed est in venenatis. </p>
         <div className='header-container'>
           <div className='profile-selectors'>
@@ -93,6 +121,7 @@ class App extends Component {
                 }
             })()}
           
+        </div>
         </div>
         
       </div>
