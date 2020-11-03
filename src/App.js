@@ -81,15 +81,20 @@ class App extends Component {
             <a href="#global" onClick={() => this.setState({ selectedmode: 'global' })} >
               <div className='profile-selector global'>Global</div>
             </a>
+            <a href="#mobility" onClick={() => this.setState({ selectedmode: 'mobility' })} >
+              <div className='profile-selector mobility'>Mobility</div>
+            </a>
             <a href="#investement" onClick={() => this.setState({ selectedmode: 'investment' })} >
-              <div className='profile-selector global'>Investment</div>
+              <div className='profile-selector investment'>Investment</div>
             </a>
             <a href="#retirement" onClick={() => this.setState({ selectedmode: 'retirement' })} >
-              <div className='profile-selector global'>Retirement</div>
+              <div className='profile-selector retirement'>Retirement</div>
             </a>
           </div>
           
           <SearchBox test='test' onSearchChange={this.onSearchChange} />
+
+        
 
         </div>
 
