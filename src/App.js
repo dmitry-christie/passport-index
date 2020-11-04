@@ -5,6 +5,12 @@ import { GlobalList } from './components/global-list/global-list.component';
 import { CombinedScores } from './components/combined-scores/combined-scores.component';
 import { SearchBox } from './components/search-box/search-box.component';
 import logo from './assets/img/passport-index-logo.png';
+import global from './assets/img/global-index-icon.png';
+import mobility from './assets/img/mobility-index-icon.png';
+import investor from './assets/img/investor-index-icon.png';
+import retirement from './assets/img/retirement-index-icon.png';
+
+
 
 import './App.css';
 
@@ -79,16 +85,16 @@ class App extends Component {
         <div className='header-container'>
           <div className='profile-selectors'>
             <a href="#global" onClick={() => this.setState({ selectedmode: 'global' })} >
-              <div className='profile-selector global'>Global</div>
+              <div className='profile-selector global'> <img src={global} alt=""/>Global Index</div>
             </a>
             <a href="#mobility" onClick={() => this.setState({ selectedmode: 'mobility' })} >
-              <div className='profile-selector mobility'>Mobility</div>
+              <div className='profile-selector mobility'><img src={mobility} alt=""/>Mobility Index</div>
             </a>
             <a href="#investement" onClick={() => this.setState({ selectedmode: 'investment' })} >
-              <div className='profile-selector investment'>Investment</div>
+              <div className='profile-selector investment'><img src={investor} alt=""/>Investor Index</div>
             </a>
             <a href="#retirement" onClick={() => this.setState({ selectedmode: 'retirement' })} >
-              <div className='profile-selector retirement'>Retirement</div>
+              <div className='profile-selector retirement'><img src={retirement} alt=""/>Retirement Index</div>
             </a>
           </div>
           
@@ -128,7 +134,14 @@ class App extends Component {
           
         </div>
         </div>
-        
+        <footer>
+            <div className="footer-logo">
+              <img src="{logo}" alt=""/>
+            </div>
+            <div className="copyright">
+              Developed by <a href="#test">Global Citizen Solutions</a>. All right reserved.
+            </div>
+        </footer>
       </div>
     );
   }
