@@ -4,7 +4,7 @@ import './search-box.styles.css';
 
 export const SearchBox = props => (
  
-
+<div className="search-container"> 
   <form action="" class="search-bar">
     <input type="search" name="search" pattern=".*\S.*" required 
     placeholder='search countries'
@@ -13,5 +13,6 @@ export const SearchBox = props => (
       <span>Search</span>
     </button>
   </form>
+</div>
  
 );

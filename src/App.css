@@ -25,14 +25,19 @@ h1 {
   color: white;
 }
 
-.tables-container {
-  display: flex;
-  justify-content: center;
+p {
+  margin: 0px;
+  padding: 0px;
 }
+
 
 .header-container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
 }
 
 .profile-selectors {
@@ -50,8 +55,8 @@ h1 {
 }
 
 .global-passport-scores {
-  width: 50%;
-}
+  width: 100%;
+} 
 .living-scores {
   width: 50%;
 }
@@ -128,6 +133,9 @@ h1 {
   top: 0px;
   z-index: 1;
   background: #1a222e;
+  min-width: 250px;
+  max-width: 90%;
+  text-align: center;
 }
 
 #sidebar ul {
@@ -139,6 +147,10 @@ h1 {
 #sidebar li {
   list-style: none;
   margin: 1em;
+}
+
+.hamburger {
+  width: 70px;
 }
 
 
@@ -181,15 +193,14 @@ body {
 	outline: transparent;
 }
 .search-bar {
-	margin: auto;
-	padding: 1.5em;
-	justify-content: center;
+	padding: 1.5em 0px;
+	justify-content: flex-end;
 	max-width: 30em;
 }
 .search-bar input {
 	background: transparent;
 	border-radius: 1.5em;
-	box-shadow: 0 0 0 0.4em #171717 inset;
+	box-shadow: 0 0 0 0.4em white inset;
 	padding: 0.75em;
 	transform: translate(0.5em,0.5em) scale(0.5);
 	transform-origin: 100% 0;
@@ -202,13 +213,13 @@ body {
 }
 .search-bar input:focus,
 .search-bar input:valid {
-	background: #fff;
+	background: #232d3b;
 	border-radius: 0.375em 0 0 0.375em;
 	box-shadow: 0 0 0 0.1em #d9d9d9 inset;
 	transform: scale(1);
 }
 .search-btn {
-	background: #171717;
+	background: white;
 	border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
 	padding: 0.75em;
 	position: relative;
@@ -298,18 +309,7 @@ body {
 }
 
 .profile-selectors a {
-  height: 50px;
   width: 22%;
-}
-
-.header-container {
-  width: 100%;
-  
-  display: flex;
-  flex-direction: column;
-  padding-top: 2em;
-}
-.profile-selectors a {
   height: 100px;
 }
 
@@ -352,6 +352,10 @@ body {
   border: 0px;
 }
 
+.profile-selectors .inactive div {
+  background-color: #222d32;
+}
+
 .profile-selectors .profile-selector img {
  margin-right: 1em;
 }
@@ -375,3 +379,226 @@ body {
 }
 
 
+footer {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  background: #1d2733;
+  width: 100%;
+  padding: 1em 0px;
+  
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+footer .copyright {
+  color: #54647c;
+  font-family: 'Roboto';
+
+}
+
+
+footer .copyright a {
+  color: #007ac1;
+  text-decoration: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.header .right {
+  margin-right: 3em;
+  display: flex;
+  align-items: center;
+} 
+
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+
+.table-header {
+  background-color: #222c39;
+  border-radius: 10px;
+}
+
+.table-body {
+  display: flex;
+}
+
+.table-header-left {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding-right: 2em;
+}
+
+.table-header-left > div {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.card-container .left{
+  width: 50%;
+  padding-right: 2em;
+}
+.card-container  .right {
+  width: 50%;
+  justify-content: space-between;
+    padding-right: 2em;
+    text-align: center;
+    align-items: center;
+}
+.tables-container .country {
+  width: 40%;
+  padding-left: 2em;
+}
+
+.tables-container .rank {
+  width: 20%;
+  text-align: center;
+}
+
+.tables-header .more-details, .more-details-container {
+  width: 20%;
+  text-align: center;
+}
+
+.tables-container .country img {
+  margin-right: 1em;
+ 
+  
+}
+
+.global-results > div, .global-scores > div {
+  width: 33%;
+    text-align: center;
+}
+
+
+.card-container {
+  width: 100%;
+  background-color: #252c39;
+  border-radius: 10px;
+  height: 6em;
+  margin-bottom: 0.5em;
+  align-items: center;
+}
+
+.table-header {
+  height: 6em;
+  margin-bottom: 0.5em;
+
+}
+
+.table-header-left .country {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.table-header-left p, .table-header-right p {
+  font-weight: 600;
+}
+
+.global-passport-score-container {
+  width: 80% !important;
+}
+
+.global-scores {
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+
+}
+
+.table-header-right {
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding-right: 2em;
+}
+
+.table-header-right .combined, .tables-container .combined-bar-container {
+  width: 60%;
+}
+
+
+
+.table-header-right > div, .card-container .right > div {
+  text-align: center;
+}
+
+.global-passport-score {
+  border-bottom: 1px solid #4a596f; 
+  color: #4a596f; 
+  text-transform: uppercase;
+
+  align-items: center;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.global-results {
+  justify-content: space-between;
+  width: 80%;
+}
+
+.more-details a {
+  text-decoration: none;
+}
+
+.card-container .more-details {
+  background: #007ac1;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 2px 0px;
+}
+
+.mobility-result, .living-result, .investment-result {
+  justify-content: center;
+  align-items: center;
+}
+.rank-box {
+  padding: 5px 9px;
+}
+
+.rank-box-mobility {
+  background-color: #007ac1;
+}
+
+.rank-box-living {
+  background-color: #17a9bc;
+}
+.rank-box-investment {
+  background-color: #da1939;
+}
+
+
+
+
+
+
+.rank-box {
+  margin-left: 1em;
+  border-radius: 3px;
+}
