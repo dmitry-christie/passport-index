@@ -164,17 +164,101 @@ class App extends Component {
             </div>
           </div>
 
-            <div className="table-header table-header-right flex">
-              <div className="combined">
-                <p>Combined Scores</p>
-              </div>
-              <div className="rank">
-                <p>Rank</p>
-              </div>
-              <div className="more-details">
-                <p>More Details</p>
-              </div>
-          </div>
+            
+
+                 {(() => {
+                switch(this.state.selectedmode) {
+                  case 'mobility':
+                    return           <div className="table-header table-header-right flex">
+                                      <div className="mobility-container">
+                    <div className="mobility-header">Mobility</div>
+                    <div className="mobility-columns">
+                      <div className="visa-free-countries">Visa Free Countries</div>
+                      <div className="visa-on-arrival">Visa on Arrival</div>
+                      <div className="visa-free-access-container">
+                        <div>Visa Free Access To</div>
+                        <div className="flags-visa-free flex">
+                          <div className="eu">
+                            EU
+                          </div>
+                          <div className="eu">
+                            US
+                          </div>
+                          <div className="eu">
+                            UK
+                          </div>
+                          <div className="eu">
+                            JP
+                          </div>
+
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div className="rank">
+                    <p>Rank</p>
+                  </div>
+                  <div className="more-details">
+                    <p>More Details</p>
+                  </div> </div>
+                    break;
+                  case 'investment':
+                    return           <div className="table-header table-header-right flex">
+                    <div className="mobility-container">
+  <div className="investment-header">Investment</div>
+  <div className="investment-columns flex">
+    <div className="visa-free-countries">GDP per CAP</div>
+    <div className="visa-on-arrival">Personal Tax</div>
+    <div className="visa-free-access-container">Investment Grade
+     
+    </div>
+    </div>
+</div>
+<div className="rank">
+  <p>Rank</p>
+</div>
+<div className="more-details">
+  <p>More Details</p>
+</div> </div>
+                    break;
+                  case 'retirement':
+                    return           <div className="table-header table-header-right flex">
+                                    <div className="mobility-container">
+                  <div className="retirement-header">Living</div>
+                  <div className="retirement-columns flex">
+                    <div className="visa-free-countries">Cost of living</div>
+                    <div className="visa-on-arrival">HDI</div>
+                    <div className="visa-free-access-container">Freedom
+                    
+                    </div>
+                    </div>
+                </div>
+                <div className="rank">
+                  <p>Rank</p>
+                </div>
+                <div className="more-details">
+                  <p>More Details</p>
+                </div> </div>
+                    break;
+                  default: 
+                  return           <div className="table-header table-header-right flex"><div className="combined">
+                  <p>Combined Scores</p>
+                </div>
+                <div className="rank">
+                  <p>Rank</p>
+                </div>
+                <div className="more-details">
+                  <p>More Details</p>
+                </div> </div>
+                    
+
+                    
+                }
+            })()}
+
+          
+              
+         
           </div>
           <div className="table-body">
 
@@ -183,31 +267,7 @@ class App extends Component {
 
          
         <GlobalList countries={filteredcountries} test='test' selectedmode={selectedmode}/>
-         {/* {(() => {
-                switch(this.state.selectedmode) {
-                  case 'mobility':
-                    return           <div className='living-scores'>
-                    <CardList countries={filteredcountries} /></div>
-                    break;
-                  case 'investment':
-                    return           <div className='living-scores'>
-                    <CardList countries={filteredcountries} /></div>
-                    break;
-                  case 'retirement':
-                    return           <div className='living-scores'>
-                    <CardList countries={filteredcountries} /></div>
-                    break;
-                  default: 
-                  return           <div className='living-scores'>
-                  
-                  <CombinedScores countries={filteredcountries} /></div>
-                    
-
-                    
-                }
-            })()}
-
-          */}
+      
           
         </div>
         </div>

@@ -29,9 +29,18 @@ export const Card = props => (
 
     <div className="right flex">
       <div className="combined-bar-container">
-        <div clasName="combined-bar">
-          {props.country.visa_free} 
-        </div>   
+        <div clasName="combined-bar flex">
+          <div className="mobility-bar">
+
+          </div>
+          <div className="investment-bar">
+            
+          </div>
+          <div className="living-bar">
+            
+          </div>
+        </div>  
+        {props.country.points_combined}  
       </div>
       <div className="rank">
         <p>{props.country.rank_combined} </p>

@@ -586,6 +586,32 @@ footer .copyright a {
   background-color: #007ac1;
 }
 
+.mobility-header {
+  background-color: #007ac1;
+}
+
+.mobility-container {
+  width: 60%;
+  height: 100%;
+
+}
+
+.mobility-container .mobility-header,  .mobility-container .investment-header, .mobility-container .retirement-header{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.mobility-columns {
+  display: flex;
+  justify-content: space-between;
+ font-size: 0.8em;
+}
+
+
+
 .rank-box-living {
   background-color: #17a9bc;
 }
@@ -593,12 +619,53 @@ footer .copyright a {
   background-color: #da1939;
 }
 
+.investment-header {
+  background-color: #da1939;
+}
+
+.retirement-header {
+ 
+    background-color: #17a9bc;
+ 
+}
+
+.language-switcher a {
+  color: #4a596f;
+  text-decoration: none;
+}
+
+.visa-free-countries, .visa-on-arrival {
+  width: 25%;
+}
+
+.flags-visa-free {
+  justify-content: space-between;
+}
 
 
+.investment-columns, .retirement-columns {
+  align-items: center;
+  height: 50%;
+}
+
+.investment-columns > div {
+  width: 33%;
+  font-size: 0.8em;
+}
+
+.retirement-columns > div {
+  width: 33%;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
 .rank-box {
   margin-left: 1em;
   border-radius: 3px;
+}
+
+.combined-bar {
+  border-radius: 10px;
 }
