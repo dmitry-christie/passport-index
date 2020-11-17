@@ -1,0 +1,21 @@
+.mobility-bar {
+    background: #007ac1;
+    
+    border-radius: 10px 0px 0px 10px;
+}
+
+.investment-bar {
+    background: #da1939;
+}
+
+.living-bar {
+    background: #17a9bc;
+    
+    /*border-radius: 0px 10px 10px 0px;*/
+
+}
+
+.bar {
+    font-size: 0.1em;
+
+}

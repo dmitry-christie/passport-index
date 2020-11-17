@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 import { CardList } from './components/card-list/card-list.component';
 import { GlobalList } from './components/global-list/global-list.component';
+import { MobilityList } from './components/mobility-list/mobility-list.component';
+import InvestmentList  from './components/investment-list/investment-list.component';
+
+
 import { CombinedScores } from './components/combined-scores/combined-scores.component';
 import { SearchBox } from './components/search-box/search-box.component';
 import logo from './assets/img/passport-index-logo.png';
@@ -12,6 +16,7 @@ import mobility from './assets/img/mobility-index-icon.png';
 import investor from './assets/img/investor-index-icon.png';
 import retirement from './assets/img/retirement-index-icon.png';
 
+import Joyride from 'react-joyride';
 
 
 import './App.css';
@@ -26,6 +31,17 @@ class App extends Component {
       sortby: '',
       selectedmode: 'global',
       menuactive: 'inactive',
+      steps: [
+        {
+          target: '.my-first-step',
+          content: 'This is my awesome feature!',
+        },
+        {
+          target: '.my-other-step',
+          content: 'This another awesome feature!',
+        },
+        
+      ]
     };
   }
 
@@ -67,9 +83,15 @@ class App extends Component {
     const filteredcountries = countries.filter(country =>
       country.name.toLowerCase().includes(searchField.toLowerCase())
     );
+    const { steps } = this.state;
+
 
     return (
       <div className='App'>
+        <Joyride
+          steps={this.state.steps}
+          
+        />
         <div id="header" className='header'>
           <div className='left'>          
             <div className='hamburger'>
@@ -132,7 +154,7 @@ class App extends Component {
           </div>
           
           <SearchBox test='test' onSearchChange={this.onSearchChange} />
-
+        
         
 
         </div>
@@ -178,17 +200,17 @@ class App extends Component {
                       <div className="visa-free-access-container">
                         <div>Visa Free Access To</div>
                         <div className="flags-visa-free flex">
-                          <div className="eu">
-                            EU
+                          <div className="eu flex">
+                          <img src="https://www.globalcitizensolutions.com/passport-index/EU.svg"  alt=""/><span>EU</span>
                           </div>
-                          <div className="eu">
-                            US
+                          <div className="us flex">
+                          <img src="https://www.globalcitizensolutions.com/passport-index/US.svg"  alt=""/> <span>US</span>
                           </div>
-                          <div className="eu">
-                            UK
+                          <div className="uk flex">
+                          <img src="https://www.globalcitizensolutions.com/passport-index/GB.svg"  alt=""/><span>UK</span>
                           </div>
-                          <div className="eu">
-                            JP
+                          <div className="eu flex">
+                          <img src="https://www.globalcitizensolutions.com/passport-index/JP.svg"  alt=""/><span>JP</span>
                           </div>
 
                         </div>
@@ -264,9 +286,19 @@ class App extends Component {
 
           
 
+          {(() => {
+            switch(this.state.selectedmode) {
 
+            case "mobility":   return         <MobilityList countries={filteredcountries} test='test' selectedmode={this.state.selectedmode}/>            ;
+            case "global":   return         <GlobalList countries={filteredcountries} test='test' selectedmode={this.state.selectedmode}/>            ;
+            case "investment":   return         <InvestmentList countries={filteredcountries} test='test' selectedmode={this.state.selectedmode}/>            ;
+
+
+            default:      return <GlobalList countries={filteredcountries} test='test' selectedmode={this.state.selectedmode}/>
+            }
+          })()}
+      
          
-        <GlobalList countries={filteredcountries} test='test' selectedmode={selectedmode}/>
       
           
         </div>
