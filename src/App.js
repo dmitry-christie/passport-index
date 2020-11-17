@@ -145,7 +145,7 @@ class App extends Component {
             <a href="#mobility" className={this.state.selectedmode === 'mobility' ? "active" : "inactive"} onClick={() => this.sortByMode('mobility' )} >
               <div className='profile-selector mobility'><img src={mobility} alt=""/>Mobility Index</div>
             </a>
-            <a href="#investement" className={this.state.selectedmode === 'investment' ? "active" : "inactive"} onClick={() => this.sortByMode('investment' )} >
+            <a href="#investment" className={this.state.selectedmode === 'investment' ? "active" : "inactive"} onClick={() => this.sortByMode('investment' )} >
               <div className='profile-selector investment'><img src={investor} alt=""/>Investor Index</div>
             </a>
             <a href="#retirement" className={this.state.selectedmode === 'retirement' ? "active" : "inactive"}  onClick={() => this.sortByMode('retirement')} >
