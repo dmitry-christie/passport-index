@@ -1,71 +1,55 @@
-import React from 'react';
+import React from "react";
 
+import { Icon } from "../icon/icon.component";
+import TableLeft from "../table-left-side/table-left-side.component";
 
-export const CardMobility = props => (
-  <div className='card-container flex'>
-    <div className="left flex">
-      <div class="country">
-        <p> <img src={`https://www.globalcitizensolutions.com/passport-index/${props.country.country_code}.svg`}  alt=""/>{props.country.name} </p>
-      </div>
-      <div className="global-results flex">
-        <div className="mobility-result flex">
-          <p> {props.country.mobility_pts} </p>
-          <p className="rank-box rank-box-mobility"> {props.country.mobility_rank} </p>
-        </div>
-        <div className="investment-result flex">
-          <p> {props.country.points_investor} </p>
-          <p className="rank-box rank-box-investment"> {props.country.investment_rank} </p>
-
-        </div>
-        <div className="living-result flex">
-          <p> {props.country.retire_pts} </p>
-          <p className="rank-box rank-box-living"> {props.country.retire_rank} </p>
-
-        </div>
-      </div>
-     
-    </div>
+export const CardMobility = (props) => (
+  <div className="card-container flex">
+    <TableLeft
+      country_code={props.country.country_code}
+      name={props.country.name}
+      rank_combined={props.country.rank_combined}
+      points_mobility={props.country.points_mobility}
+      points_investor={props.country.points_investor}
+      points_retire={props.country.points_retire}
+      retire_rank={props.country.retire_rank}
+      mobility_rank={props.country.mobility_rank}
+      investment_rank={props.country.investment_rank}
+    />
 
     <div className="right flex">
-    
-
-    <div className="mobility-container">
-                    <div className="flex">
-                      <div className="visa-free-countries">{props.country.mobility_vfree}</div>
-                      <div className="visa-on-arrival">{props.country.mobility_voa}</div>
-                      <div className="visa-free-access-container">     
-                        <div className="flags-visa-free visa-free-value-container flex">
-                          <div className="eu">
-                            {props.country.visafree_eu}
-                          </div>
-                          <div className="eu">
-                          {props.country.visafree_us}
-
-                          </div>
-                          <div className="uk">
-                          {props.country.visafree_gb}
-
-                          </div>
-                          <div className="eu">
-                          {props.country.visafree_jp}
-
-                          </div>
-
-                        </div>
-                      </div>
-                      </div>
-                      </div>
-      <div className="rank">
-        <p>{props.country.mobility_rank} </p>
+      <div className="mobility-container">
+        <div className="flex">
+          <div className="visa-free-countries">
+            {props.country.mobility_vfree}
+          </div>
+          <div className="visa-on-arrival">{props.country.mobility_voa}</div>
+          <div className="visa-free-access-container">
+            <div className="flags-visa-free visa-free-value-container flex">
+              <div className="eu">
+                <Icon type="true-false" value={props.country.visafree_eu} />
+              </div>
+              <div className="us">
+                <Icon type="true-false" value={props.country.visafree_us} />
+              </div>
+              <div className="gb">
+                <Icon type="true-false" value={props.country.visafree_gb} />
+              </div>
+              <div className="jp">
+                <Icon type="true-false" value={props.country.visafree_jp} />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div className="more-details-container">
         <div className="more-details">
-          <a href="#morde-details"><p>View</p></a>
+          <a href="#morde-details">
+            <p>View</p>
+          </a>
         </div>
       </div>
     </div>
-    
-
-    
   </div>
 );

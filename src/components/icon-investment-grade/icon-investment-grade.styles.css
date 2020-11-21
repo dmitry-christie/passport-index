@@ -1,0 +1,34 @@
+.investment-grade-container {
+    justify-content: center;
+}
+
+.investment-grade-container p {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.investment-grade-value-5 p {
+    background: #da1939; 
+}
+
+.investment-grade-value-4 p {
+    background: #17a9bc;
+}
+
+.investment-grade-value-3 p {
+    background: #007ac1; 
+}
+
+.investment-grade-value-2 p {
+    background: #1e57a4; 
+}
+
+.investment-grade-value-1 p {
+    background: #11325e;
+}

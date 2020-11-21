@@ -1,0 +1,17 @@
+.icon-true-false-0 {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: cover;
+    background-image: url(https://passportindex.global/SVG/icon-check2.svg);
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.icon-true-false-1 {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-size: cover;
+    background-image: url(https://passportindex.global/SVG/icon-check.svg);
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}

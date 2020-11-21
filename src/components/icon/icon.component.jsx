@@ -1,10 +1,9 @@
 import React from 'react';
 
+import './icon.styles.css';
 
-import './card.styles.css';
-
-export const Icon = props => (
-  <div className='icon '>
+export const Icon = ({ type, value}) => (
+  <div className={`icon icon-${type} icon-${type}-${value}`}>
     
   </div>
 );

@@ -7,3 +7,41 @@
   line-height: 30px;
   margin-bottom: 30px;
 }
+.search-container {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  border-radius: 20px;
+}
+
+.search-box-container {
+  height: 2em;
+}
+
+.icon-container {
+  background: #007ac1;
+  border-radius: 0px 10px 10px 0px;
+  padding: 1em;
+  height: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box-container {
+  height: 3em;
+}
+
+input, select, textarea{
+  color: #1d2733;
+}
+
+input:focus {
+  color: white;
+}
+
+.search-box-container input {
+  background: #11161d;
+  border-radius: 10px 0px 0px 10px;
+  border: 0px solid white;
+  padding-left: 10px;
+  width: 20em;
+}
