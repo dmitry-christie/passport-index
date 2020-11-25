@@ -1,0 +1,24 @@
+.selectYourPassport {
+    width: 100%;
+    background: #222c39;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+
+}
+
+.passport-selector {
+    max-width: 160px;
+    background: #222c39;
+    color: white;
+    border: 0px;
+    margin-left: 2em;
+}
+
+.close-button a {
+    margin-left: 2em;
+    color: white;
+    text-decoration: none;
+}

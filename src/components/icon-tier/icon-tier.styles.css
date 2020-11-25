@@ -1,0 +1,25 @@
+.icon-tier-col div {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+    background-image: url(https://passportindex.global/SVG/icon-money.svg);
+}
+
+
+.icon-tier-hdi div {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+    background-image: url(https://passportindex.global/SVG/icon-smile.svg);
+}
+
+
+.icon-tier-freedom div {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+    background-image: url(https://passportindex.global/SVG/icon-dove.svg);
+}

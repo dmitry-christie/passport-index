@@ -3,6 +3,14 @@ import React from 'react';
 import ScoreBar from '../score-bar/score-bar.component';
 import TableLeft from '../table-left-side/table-left-side.component';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  BrowserRouter
+} from "react-router-dom";
+
 import './card.styles.css';
 
 export const Card = props => (
@@ -22,7 +30,15 @@ export const Card = props => (
      
       <div className="more-details-container">
         <div className="more-details">
-          <a href="#more-details"><p>View</p></a>
+        <Link
+          to={
+            {pathname: `country/${props.country.country_code}`,
+            state: { country: props.country.country_code }
+          }}
+        >
+          <p>View</p>
+        </Link>
+        
         </div>
       </div>
     </div>

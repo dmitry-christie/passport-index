@@ -13,26 +13,23 @@ export const TableLeft = ({ country_code, name, rank_combined, points_mobility, 
     </div>
     <div className="rank flex">
       <p className="rank-box rank-box-global">
-        #{rank_combined} 
+        {rank_combined} 
       </p>
     </div>
     <div className="global-results flex">
       <div className="mobility-result flex">
-        <p className="pts"> {points_mobility}pts</p>
         <p className="rank-box rank-box-mobility">    
-          #{mobility_rank} 
+          {mobility_rank} 
         </p>
       </div>
       <div className="investment-result flex">
-        <p className="pts"> {points_investor}pts</p>
         <p className="rank-box rank-box-investment"> 
-          #{investment_rank} 
+          {investment_rank} 
         </p>
       </div>
       <div className="living-result flex">
-        <p className="pts"> {points_retire}pts</p>
         <p className="rank-box rank-box-living">          
-          #{retire_rank} 
+          {retire_rank} 
         </p>
       </div>
     </div>
