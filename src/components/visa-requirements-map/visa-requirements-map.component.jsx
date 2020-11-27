@@ -9,9 +9,10 @@ import {
   Graticule
 } from "react-simple-maps";
 
-const geoUrl = "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+const geoUrl =
+  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
-
+const mobilityData = "https://mp2mjaut1pu90gf-passportindex.adb.eu-zurich-1.oraclecloudapps.com/ords/passportindex/mobility_data/all/ES";
 
 const colorScale = scaleLinear()
   .domain([0.29, 0.68])
@@ -33,13 +34,15 @@ const VisaRequirementsMap = () => {
         scale: 147
       }}
     >
-      <Sphere stroke="#E4E5E6" strokeWidth={0.5} />
-      <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
+     
       {data.length > 0 && (
         <Geographies geography={geoUrl}>
+          
+            
           {({ geographies }) =>
             geographies.map((geo) => {
               const d = data.find((s) => s.ISO3 === geo.properties.ISO_A3);
+              
               return (
                 <Geography
                   key={geo.rsmKey}

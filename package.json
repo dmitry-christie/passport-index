@@ -2,7 +2,7 @@
   "name": "passport-index",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://index.globalcitizensolutions.com",
+  "homepage": "https://passportindex.global",
   "dependencies": {
     "d3-fetch": "^2.0.0",
     "d3-scale": "^3.2.3",

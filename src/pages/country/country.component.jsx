@@ -17,9 +17,6 @@ import ScoreBar from '../../components/score-bar/score-bar.component';
 class CountryPage extends Component {
 
 
- 
-
-
   componentDidMount() {
 
 
