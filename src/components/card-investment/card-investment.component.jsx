@@ -1,6 +1,7 @@
 import React from "react";
 import TableLeft from '../table-left-side/table-left-side.component';
 import IconInvestementGrade from '../icon-investment-grade/icon-investment-grade.component';
+import MoreDetailsButton  from '../more-details-button/more-details-button.component';
 
 
 export const CardInvestment = (props) => (
@@ -20,13 +21,10 @@ export const CardInvestment = (props) => (
         </div>
       </div>
 
-      <div className="more-details-container">
-        <div className="more-details">
-          <a href="#morde-details">
-            <p>View</p>
-          </a>
+        <div className="more-details-container">
+          <MoreDetailsButton country={props.country} />
         </div>
-      </div>
+      
     </div>
   </div>
 );

@@ -1,0 +1,84 @@
+.country-page-container {
+    padding-top: 6em;
+}
+
+.country-profile {
+    background: rgb(219, 208, 208);
+    min-height: 100vh;
+}
+
+body {
+    background: white;
+}
+
+.country-header {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #1d2733 50%,  white 50%);
+
+}
+
+.passport-photo {
+    padding: 2em;
+}
+
+.country-header .info {
+    padding: 2em 0em;
+}
+
+.section-container {
+    border-radius: 20px;
+    background: white;
+    padding: 1em;
+    margin: 1em 0px;
+}
+
+.section-container h2 {
+    color: blue;
+}
+
+.mega-section-container {
+    justify-content: space-between;
+}
+
+.mega-section-container > div {
+    width: 45%;
+}
+
+.passport-photo-inner-container {
+    height: 10em;
+    width: 10em;
+    border-radius: 90%;
+}
+
+.passport-photo-inner-container img {
+    height: 10em;
+    width: 10em;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 180%;
+}
+
+
+#global-rank-string {
+    color: #4a596f;
+    margin-right: 1em;
+    font-size: 1.2em;
+
+}
+
+.country-header .global-rank {
+    align-items: center;
+}
+.country-name {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0.25em 0px;
+}
+
+.info .row {
+    height: 50%;
+}
+
+.combinedScoresString {
+    color: #4a596f;
+}

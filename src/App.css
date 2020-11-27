@@ -479,7 +479,7 @@ footer .copyright a {
     align-items: center;
 }
 .tables-container .country {
-  width: 40%;
+  width: 50%;
   padding-left: 2em;
 }
 
@@ -523,7 +523,7 @@ footer .copyright a {
 }
 
 .table-header-left .country {
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -627,7 +627,10 @@ footer .copyright a {
 .mobility-columns {
   display: flex;
   justify-content: space-between;
- font-size: 0.8em;
+  font-size: .8em;
+  line-height: 1.2em;
+  align-items: center;
+  height: 4em; 
 }
 
 

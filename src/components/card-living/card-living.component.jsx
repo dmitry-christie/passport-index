@@ -4,6 +4,7 @@ import { Icon } from "../icon/icon.component";
 import TableLeft from "../table-left-side/table-left-side.component";
 
 import IconTier from "../icon-tier/icon-tier.component";
+import MoreDetailsButton  from '../more-details-button/more-details-button.component';
 
 
 export const CardLiving = (props) => (
@@ -36,11 +37,7 @@ export const CardLiving = (props) => (
       </div>
 
       <div className="more-details-container">
-        <div className="more-details">
-          <a href="#morde-details">
-            <p>View</p>
-          </a>
-        </div>
+        <MoreDetailsButton country={props.country} />
       </div>
     </div>
   </div>

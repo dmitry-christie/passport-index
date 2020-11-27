@@ -3,13 +3,9 @@ import React from 'react';
 import ScoreBar from '../score-bar/score-bar.component';
 import TableLeft from '../table-left-side/table-left-side.component';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  BrowserRouter
-} from "react-router-dom";
+import MoreDetailsButton  from '../more-details-button/more-details-button.component';
+
+
 
 import './card.styles.css';
 
@@ -29,17 +25,7 @@ export const Card = props => (
       </div>
      
       <div className="more-details-container">
-        <div className="more-details">
-        <Link
-          to={
-            {pathname: `country/${props.country.country_code}`,
-            state: { country: props.country.country_code }
-          }}
-        >
-          <p>View</p>
-        </Link>
-        
-        </div>
+        <MoreDetailsButton country={props.country} />
       </div>
     </div>
   </div>
