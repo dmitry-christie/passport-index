@@ -1,0 +1,6 @@
+[[redirects]] 
+    from = "/build"
+  to = "/"
+  status = 301
+  force = false
+
