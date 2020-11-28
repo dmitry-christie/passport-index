@@ -42,6 +42,10 @@ class CountryPage extends Component {
         })
         
         .then(function(jsonData) {
+          delete jsonData.id_1;
+          delete jsonData.passport;
+          delete jsonData.link;
+          delete jsonData.links;
          
             that.setState({ mobility_data: jsonData });
         });
@@ -221,7 +225,7 @@ class CountryPage extends Component {
               </div>
             </div>
 
-            <VisaRequirementsRow mobility_data={this.state.mobility_data} />
+            <VisaRequirementsRow country_code="ES" mobility_data={this.state.mobility_data} />
            
           </div>
         </div>
