@@ -225,7 +225,7 @@ class CountryPage extends Component {
               </div>
             </div>
 
-            <VisaRequirementsRow country_code="ES" mobility_data={this.state.mobility_data} />
+            <VisaRequirementsRow country_code={countryCode} mobility_data={this.state.mobility_data} />
            
           </div>
         </div>

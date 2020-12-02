@@ -33,7 +33,8 @@ body {
 }
 
 .section-container h2 {
-    color: blue;
+    color: #526f83;
+    font-weight: 500;
 }
 
 .mega-section-container {

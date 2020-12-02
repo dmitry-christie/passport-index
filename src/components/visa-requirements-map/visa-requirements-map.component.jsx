@@ -10,7 +10,7 @@ import {
 } from "react-simple-maps";
 
 const geoUrl =
-  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
+  "./master.json";
 
 const mobilityData = "https://mp2mjaut1pu90gf-passportindex.adb.eu-zurich-1.oraclecloudapps.com/ords/passportindex/mobility_data/all/ES";
 
@@ -18,13 +18,14 @@ const mobilityData = "https://mp2mjaut1pu90gf-passportindex.adb.eu-zurich-1.orac
 const getCountryColor = code => {
     const map = {
         VR: "#da1939",
-        VF: "green",
-        90: "orange",
-        180: "orange",
-        VOA: "yellow",
-        '-1': "blue",
+        VF: "#6cad7b",
+        90: "#17a9bc",
+        180: "#17a9bc",
+        VOA: "#faae35",
+        '-1': "#469cd2",
         'ETA': "grey",
-        15: "orange"
+        15: "#17a9bc",
+        30: "#17a9bc"
 
     }
     return map[code];
