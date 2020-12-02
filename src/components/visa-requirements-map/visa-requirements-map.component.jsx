@@ -10,7 +10,7 @@ import {
 } from "react-simple-maps";
 
 const geoUrl =
-  "./master.json";
+  "https://raw.githubusercontent.com/dmitry-christie/passport-index/master/public/CSV/master.json";
 
 const mobilityData = "https://mp2mjaut1pu90gf-passportindex.adb.eu-zurich-1.oraclecloudapps.com/ords/passportindex/mobility_data/all/ES";
 
