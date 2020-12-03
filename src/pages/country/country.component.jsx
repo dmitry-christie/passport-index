@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import logo from "../../assets/img/passport-index-logo.png";
 import "./country.styles.css";
-import VisaRequirementsMap from "../../components/visa-requirements-map/visa-requirements-map.component";
+import VisaRequirementsMap from "../../components/visa-requirements/visa-requirements.component";
 
-import VisaRequirementsRow from "../../components/visa-requirements-row/visa-requirements-row.component";
 import { withRouter } from "react-router";
 
 import ScoreBar from '../../components/score-bar/score-bar.component';
+import HelpTip from '../../components/help-tip/help-tip.component';
+
 
 
 
@@ -112,7 +113,7 @@ class CountryPage extends Component {
               })()}
             </div>
             <div className="logo">
-              <img src={logo} alt="" />
+              <a href="/"><img src={logo} alt="" /></a>
             </div>
           </div>
           <div className="right">
@@ -186,7 +187,34 @@ class CountryPage extends Component {
 
         <div className="mobility-index-container section-container">
           <div className="top">
-            <h2>Mobility Index</h2>
+            <div className="header flex"> 
+              <h2>Mobility Index</h2>
+              <HelpTip text="Lorem Ipsum"/>
+              
+            </div>
+            
+            <div className="country-table mobility-index-table">
+              <div className="country-table-header flex">
+                <div>Rank</div>
+                <div>Visa Free Countries</div>
+                <div>Visa On Arrival</div>
+                <div>Visa Required</div>
+                <div className="visa-free-access-to-th">
+                  <div className="visa-free-access-to">
+                    <div className="text">
+                    Visa Free Access To                 
+                  </div>
+                  <div className="countries flex">
+                    <div>EU</div>
+                    <div>EU</div>
+                    <div>EU</div>
+                    <div>EU</div>
+
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -194,41 +222,29 @@ class CountryPage extends Component {
        
         <div className="mega-section-container flex">
           <div className="investment-index-container section-container">
-            <div className="top">
+            <div className="header flex"> 
               <h2>Investment Index</h2>
+              <HelpTip text="Investment Index Ipsum"/>
+              
             </div>
           </div>
 
           <div className="retirement-index-container section-container">
-            <div className="top">
+          <div className="header flex"> 
               <h2>Retirement Index</h2>
+              <HelpTip text="Retirement Index Ipsum"/>
+              
             </div>
          </div>
         </div>
         
         
-        <div className="retirement-index-container section-container">
-          <h2>Visa Requirement Map</h2> 
-          <VisaRequirementsMap />
+        
+          <VisaRequirementsMap country_code={countryCode} />
 
-        </div>
+       
 
-        <div className="retirement-index-container section-container">
-          <h2>Visa Requirement</h2> 
-          <div className="visa-requirements-table">
-            <div className="visa-requirements-table-header">
-              <div className="country-column">
-                Country
-              </div>
-              <div className="visa-type-column">
-                Visa Type
-              </div>
-            </div>
-
-            <VisaRequirementsRow country_code={countryCode} mobility_data={this.state.mobility_data} />
-           
-          </div>
-        </div>
+      
 
 
         

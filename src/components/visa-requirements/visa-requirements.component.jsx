@@ -9,32 +9,40 @@ import {
   Graticule
 } from "react-simple-maps";
 
+import './visa-requirements.styles.css'
+
 const geoUrl =
   "https://raw.githubusercontent.com/dmitry-christie/passport-index/master/public/CSV/master.json";
-
-const mobilityData = "https://mp2mjaut1pu90gf-passportindex.adb.eu-zurich-1.oraclecloudapps.com/ords/passportindex/mobility_data/all/ES";
+// update the ISO2 codes without _
 
 
 const getCountryColor = code => {
     const map = {
         VR: "#da1939",
         VF: "#6cad7b",
-        90: "#17a9bc",
-        180: "#17a9bc",
         VOA: "#faae35",
         '-1': "#469cd2",
         'ETA': "grey",
+        90: "#17a9bc",
+        180: "#17a9bc",
+        360: "#17a9bc",
+        21: "#17a9bc",
         15: "#17a9bc",
+        14: "#17a9bc",
         30: "#17a9bc"
+
 
     }
     return map[code];
 }
-const VisaRequirementsMap = (mobility_data) => {
-  const [data, setData] = useState([]);
+const VisaRequirementsMap = (props) => {
+const [data, setData] = useState([]);
+
+const mobilityDataBaseUrl = "https://mp2mjaut1pu90gf-passportindex.adb.eu-zurich-1.oraclecloudapps.com/ords/passportindex/mobility_data/all/";
+var mobiliDataFullUrl = mobilityDataBaseUrl.concat(props.country_code);
 
   useEffect(() => {
-    fetch("https://mp2mjaut1pu90gf-passportindex.adb.eu-zurich-1.oraclecloudapps.com/ords/passportindex/mobility_data/all/ES")
+    fetch(mobiliDataFullUrl)
     .then(function(response) {
         return response.json();
     })
@@ -50,6 +58,9 @@ const VisaRequirementsMap = (mobility_data) => {
   }, []);
 
   return (
+    <div className="visa-requirements-mega-section">
+      <div className="retirement-index-container section-container">
+          <h2>Visa Requirement Map</h2> 
     <ComposableMap
       projectionConfig={{
         rotate: [-10, 0, 0],
@@ -64,7 +75,10 @@ const VisaRequirementsMap = (mobility_data) => {
           {({ geographies }) => {
             return geographies.map((geo) => {
               //const d = data.mobility_data.find((s) =>  === geo.properties.ISO_A3);
-              const value = data[geo.properties.ISO_A2.toLowerCase()];
+              var value = 0;
+              if(geo.properties.ISO_A2) {
+               value = data[geo.properties.ISO_A2.toLowerCase()];
+              }
              
 
               return (
@@ -80,6 +94,30 @@ const VisaRequirementsMap = (mobility_data) => {
         </Geographies>
       )}
     </ComposableMap>
+    </div>
+
+<div className="retirement-index-container section-container">
+<h2>Visa Requirements</h2> 
+<table className="visa-requirements-table">
+  <tr className="visa-requirements-table-header">
+    <th className="country-column">
+      Country
+    </th>
+    <th className="visa-type-column">
+      Visa Type
+    </th>
+  </tr>
+  {Object.entries(data).map(([key, value]) => (
+    <tr key={key}>
+        <td className="country-column-value">{key}</td>
+        <td>{value}</td>
+    </tr>
+))}
+
+ 
+</table>
+</div>
+</div>
   );
 };
 

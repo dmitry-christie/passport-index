@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 
 import {
     BrowserRouter as Router,
+    HashRouter,
     Switch,
     Route,
-    Link,
     BrowserRouter
   } from "react-router-dom";
 

@@ -21,7 +21,7 @@ export const Card = props => (
           <ScoreBar parent_id={props.country.country_code} type='investment-bar' value={props.country.points_investor} />
           <ScoreBar parent_id={props.country.country_code} type='living-bar' value={props.country.points_retire} />  
         </div>  
-        {props.country.points_combined}  
+        {props.country.points_combined} pts.
       </div>
      
       <div className="more-details-container">
