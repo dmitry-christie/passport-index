@@ -400,6 +400,11 @@ footer {
   padding: 0.5em 0px;
   
 }
+.footer-country {
+  position: static;
+  background: #f7f7fa;
+ padding: 1em 0px 2em 0px;
+}
 
 footer .container {
   display: flex;
@@ -481,6 +486,11 @@ footer .copyright a {
 .tables-container .country {
   width: 50%;
   padding-left: 2em;
+}
+
+.SelectYourPassport-Left .left {
+  width: 70%;
+  height: 100%;
 }
 
 .tables-container .rank {

@@ -10,3 +10,54 @@
     padding-left: 2em;
 }
 
+.country-page-flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;;
+    margin-right: 1em;
+}
+
+.visa-requirements-table .country-column-value {
+    padding: 1em 0px 1em 1em;
+    vertical-align: middle;
+    
+}
+
+.country-column-value-div {
+    vertical-align: center;
+}
+
+.country-column-value-div span {
+    line-height: 30px;
+}
+
+
+.visa-type-string {
+    color: #469cd2;
+}
+.visa-type-string-VR {
+    color: #da1939;
+}
+.visa-type-string-VF {
+    color: #6cad7b;
+} 
+.visa-type-string-VOA {
+    color: #faae35;
+}
+
+.visa-type-string-ETA {
+    color: grey;
+}
+
+
+.visa-type-string-90,
+.visa-type-string-120,
+.visa-type-string-180,
+.visa-type-string-360,
+.visa-type-string-21,
+.visa-type-string-15,
+.visa-type-string-14,
+.visa-type-string-30,
+.visa-type-string-60 {
+    color: #17a9bc;
+} 

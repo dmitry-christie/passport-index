@@ -92,6 +92,12 @@ body {
 }
 
 
+.country-table-header-item {
+    color: #515f74;
+    text-align: center;
+}
+
+
 .visa-requirements-table th {
     background-color: #f5f5f5;
     border-top: 1px solid #e1e6f1;
@@ -107,20 +113,112 @@ body {
 
 .country-table {
     width: 100%;
+    flex-direction: column;
 }
-.country-table-header {
+.country-simple-table-header, .country-table-header {
     background-color: #f5f5f5;
     border-top: 1px solid #e1e6f1;
     border-bottom: 1px solid #e1e6f1;
+    border-right: 0px;
+    border-left: 0px;
+    width: 100%;
+
+}
+
+.map-number-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    color: white;
+    margin: 0 auto;
+}
+
+.map-number-container-vf {
+    background-color: #6cad7b;
+}
+
+.map-number-container-voa {
+    background-color: #faae35;
+}
+
+.map-number-container-vr {
+    background-color: #da1939;
+}
+
+
+.country-simple-table th,  .country-simple-table td{
+    padding: 1em 0px;
+    width: 33%;
+}
+
+.country-simple-table {
+    text-align: center;
+    color: #515f74;
     width: 100%;
 }
 
-.country-table > div {
-    min-width: 10%;
-    padding: 1em;
-    margin: 3em;
+.combinedScoresString, p, .row p {
+    color: #515f74;
+}
+
+.combinedScoresString {
+    text-align: center;
+}
+
+
+
+.country-table-header-item {
+    padding: 1em 1em;
+    display: flex;
+    align-items: center;
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.country-table-header-item {
+    text-align: center;
 }
 
 .country-table .visa-free-access-to-th {
-    width: 50%;
+    width: 40%;
+    padding: 1em 1em;
+    
+
+}
+
+.visa-free-access-to-th .countries {
+    justify-content: space-between;
+
+}
+
+.country-points-container {
+  
+    padding: 0.1em 0.2em;
+    margin-left: 1em;
+    border-radius: 10px;
+}
+
+.country-points-container-m {
+    background: #007ac1;
+}
+
+.country-points-container-i {
+    background: #da1939;
+}
+
+.country-points-container-r {
+    background: #17a9bc;
+}
+
+.visa-requirements-table td {
+    border-bottom: 1px solid #e1e6f1; 
+}
+
+.visa-requirements-mega-section {
+    margin-bottom: 1em;
 }

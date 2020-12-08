@@ -4,7 +4,20 @@ import "./select-your-passport.styles.css";
 
 import TableLeft from "../table-left-side/table-left-side.component";
 
+import {Card} from "../card/card.component";
+
 import Select from "react-select";
+
+import { CountryCard } from '../country-card/country-card.component';
+
+
+
+import {GlobalList} from "../global-list/global-list.component";
+import { MobilityList } from "../mobility-list/mobility-list.component";
+import InvestmentList from "../investment-list/investment-list.component";
+import {LivingList} from "../living-list/living-list.component";
+
+
 
 
 
@@ -105,7 +118,8 @@ class SelectYourPassport extends Component {
             <p className="close-button">
               <a href="#close" onClick={() => this.resetSelectedPassport()}> x </a>
             </p>
-            <TableLeft  country_code={this.state.countryData.country_code} name={this.state.countryData.name} rank_combined={this.state.countryData.rank_combined} points_mobility={this.state.countryData.points_mobility} points_investor={this.state.countryData.points_investor} points_retire={this.state.countryData.points_retire} retire_rank={this.state.countryData.retire_rank} mobility_rank={this.state.countryData.mobility_rank} investment_rank={this.state.countryData.investment_rank}/>
+            <CountryCard country={this.state.countryData} selectedmode={this.props.selectedmode} />
+
           </div>
         ) : (
           <div className="passport-select-container">

@@ -34,8 +34,10 @@
 
 .SelectYourPassport-Left .country {
     width: 40%;
-    padding-left: 2em;
-    height: 1em;
+    padding-left: 1em;
+    height: 2em;
+    display: flex;
+    align-self: center;
 }
 
 .SelectYourPassport-Left .country p {

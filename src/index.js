@@ -18,10 +18,10 @@ import './index.css';
 
 ReactDOM.render(
     <Router>
-    <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/country/:country' component={CountryPage}/>
-    </Switch>
+        <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route path='/country/:country' component={CountryPage}/>
+        </Switch>
     </Router>, 
 document.getElementById('root')
 );

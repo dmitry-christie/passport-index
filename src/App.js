@@ -2,10 +2,7 @@ import React, { Component } from "react";
 
 
 
-import { GlobalList } from "./components/global-list/global-list.component";
-import { MobilityList } from "./components/mobility-list/mobility-list.component";
-import InvestmentList from "./components/investment-list/investment-list.component";
-import {LivingList} from "./components/living-list/living-list.component";
+
 import { SearchBox } from "./components/search-box/search-box.component";
 import logo from "./assets/img/passport-index-logo.png";
 import footer_logo from "./assets/img/footer-logo.png";
@@ -13,6 +10,8 @@ import global from "./assets/img/global-index-icon.png";
 import mobility from "./assets/img/mobility-index-icon.png";
 import investor from "./assets/img/investor-index-icon.png";
 import retirement from "./assets/img/retirement-index-icon.png";
+
+import {CountriesList} from "./components/countries-list/countries-list.component";
 import "./App.css";
 import SelectYourPassport from "./components/select-your-passport/select-your-passport.component";
 
@@ -202,7 +201,7 @@ class App extends Component {
 
             <SearchBox test="test" onSearchChange={this.onSearchChange} />
           </div>
-                <SelectYourPassport countries={this.state.countries}  selectedmode={this.state.selectedmode}/>
+          <SelectYourPassport countries={this.state.countries}  selectedmode={this.state.selectedmode}/>
 
           <div className="tables-container">
             <div className="table-header  flex">
@@ -347,47 +346,8 @@ class App extends Component {
               })()}
             </div>
             <div className="table-body">
-              {(() => {
-                switch (this.state.selectedmode) {
-                  case "mobility":
-                    return (
-                      <MobilityList
-                        countries={filteredcountries}
-                        selectedmode={this.state.selectedmode}
-                      />
-                    );
-                  case "global":
-                    return (
-                      <GlobalList
-                        countries={filteredcountries}
-                        selectedmode={this.state.selectedmode}
-                      />
-                    );
-                  case "investment":
-                    return (
-                      <InvestmentList
-                        countries={filteredcountries}                  
-                        selectedmode={this.state.selectedmode}
-                      />
-                    );
-
-                    case "retirement":
-                      return (
-                        <LivingList
-                          countries={filteredcountries}                  
-                          selectedmode={this.state.selectedmode}
-                        />
-                      );
-
-                  default:
-                    return (
-                      <GlobalList
-                        countries={filteredcountries}
-                        selectedmode={this.state.selectedmode}
-                      />
-                    );
-                }
-              })()}
+              <CountriesList countries={filteredcountries} selectedmode={this.state.selectedmode} />
+             
             </div>
           </div>
         </div>
