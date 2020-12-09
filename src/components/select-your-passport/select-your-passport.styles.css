@@ -25,9 +25,11 @@
 }
 
 .SelectYourPassport-Left {
-    width: 70%;
-    padding-right: 2em;
+    width: 100%;
     align-items: center;
+}
+.selectYourPassport .card-container {
+    height: 3em;
 }
 
 

@@ -17,6 +17,8 @@ import SelectYourPassport from "./components/select-your-passport/select-your-pa
 
 
 
+
+
 class App extends Component {
   constructor() {
     super();
@@ -67,11 +69,13 @@ class App extends Component {
     this.setState({ searchField: event.target.value });
   };
 
+
   render() {
     const { countries, searchField, selectedmode } = this.state;
     const filteredcountries = countries.filter((country) =>
       country.name.toLowerCase().includes(searchField.toLowerCase())
     );
+
 
     return (
       <div className="App">

@@ -285,7 +285,7 @@ class CountryPage extends Component {
                 <div className="country-points-container  country-points-container-r">
                   {this.state.country.retire_pts} pts.
                 </div>
-              </div>
+            </div>
               <div className="country-table mobility-index-table investment-index-table">
                 <div className="country-table-header flex">
                   <div className="country-table-header-item">Rank</div>
