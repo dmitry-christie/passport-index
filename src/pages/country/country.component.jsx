@@ -11,6 +11,8 @@ import ScoreBar from "../../components/score-bar/score-bar.component";
 import HelpTip from "../../components/help-tip/help-tip.component";
 
 import { Icon } from "../../components/icon/icon.component";
+import IconInvestementGrade from '../../components/icon-investment-grade/icon-investment-grade.component';
+
 
 class CountryPage extends Component {
   componentDidMount() {
@@ -273,7 +275,7 @@ class CountryPage extends Component {
                   {this.state.country.investment_tax_index}
                 </div>
                 <div className="country-table-header-item">
-                  {this.state.country.investment_vcpe_tier}
+                <IconInvestementGrade value={this.state.country.investment_vcpe_display} />
                 </div>
               </div>
             </div>

@@ -1,0 +1,74 @@
+.investment-grade-container {
+    justify-content: center;
+}
+
+.investment-grade-container p {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.investment-grade-value-A p {
+    background: rgb(22, 159, 73); 
+}
+
+.investment-grade-value-B p {
+    background: rgb(122, 212, 62); 
+}
+
+.investment-grade-value-C p {
+    background: rgb(251, 184, 49);  
+}
+
+.investment-grade-value-D p {
+    background: rgb(243, 130, 49); 
+}
+
+.investment-grade-value-E p {
+    background: rgb(194, 26, 36); 
+}
+
+.personal-tax-value-1 {
+    background-image: url(https://passportindex.global/SVG/icon-18.svg);
+   background-repeat: no-repeat;
+   width: 2em;
+   height: 2em;
+}
+
+.personal-tax-value-2 {
+    background-image: url(https://passportindex.global/SVG/icon-17.svg);
+   background-repeat: no-repeat;
+   width: 2em;
+   height: 2em;
+}
+
+.personal-tax-value-3 {
+    background-image: url(https://passportindex.global/SVG/icon-16.svg);
+   background-repeat: no-repeat;
+   width: 2em;
+   height: 2em;
+}
+
+.personal-tax-value-4 {
+    background-image: url(https://passportindex.global/SVG/icon-15.svg);
+   background-repeat: no-repeat;
+   width: 2em;
+   height: 2em;
+}
+.personal-tax-value-5 {
+    background-image: url(https://passportindex.global/SVG/icon-14.svg);
+   background-repeat: no-repeat;
+   width: 2em;
+   height: 2em;
+}
+
+
+.personal-tax-container {
+    justify-content: center;
+    align-items: center;
+}

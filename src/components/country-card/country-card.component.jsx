@@ -6,6 +6,7 @@ import TableLeft from '../table-left-side/table-left-side.component';
 import MoreDetailsButton  from '../more-details-button/more-details-button.component';
 import IconTier from "../icon-tier/icon-tier.component";
 import IconInvestementGrade from '../icon-investment-grade/icon-investment-grade.component';
+import IconPersonalTax from '../icon-personal-tax/icon-personal-tax.component';
 
 import { Icon } from "../icon/icon.component";
 
@@ -55,10 +56,8 @@ export const CountryCard = props => (
                           <div className="visa-free-countries">
                             ${props.country.investment_gdp_pc}
                           </div>
-                          <div className="visa-on-arrival">
-                            {props.country.investment_tax_index}%
-                          </div>
-                        <IconInvestementGrade value={props.country.investment_vcpe_tier} />
+                          <IconPersonalTax value={props.country.investment_tax_display} />
+                          <IconInvestementGrade value={props.country.investment_vcpe_display} />
                         
                         </div>
                       </div>

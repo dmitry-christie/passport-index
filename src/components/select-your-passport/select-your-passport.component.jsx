@@ -2,9 +2,7 @@ import React, { Component } from "react";
 
 import "./select-your-passport.styles.css";
 
-import TableLeft from "../table-left-side/table-left-side.component";
 
-import {Card} from "../card/card.component";
 
 import Select from "react-select";
 
@@ -12,10 +10,7 @@ import { CountryCard } from '../country-card/country-card.component';
 
 
 
-import {GlobalList} from "../global-list/global-list.component";
-import { MobilityList } from "../mobility-list/mobility-list.component";
-import InvestmentList from "../investment-list/investment-list.component";
-import {LivingList} from "../living-list/living-list.component";
+
 
 
 

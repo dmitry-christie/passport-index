@@ -13,22 +13,22 @@
     line-height: 30px;
 }
 
-.investment-grade-value-5 p {
-    background: #da1939; 
+.investment-grade-value-A p {
+    background: rgb(22, 159, 73); 
 }
 
-.investment-grade-value-4 p {
-    background: #17a9bc;
+.investment-grade-value-B p {
+    background: rgb(122, 212, 62); 
 }
 
-.investment-grade-value-3 p {
-    background: #007ac1; 
+.investment-grade-value-C p {
+    background: rgb(251, 184, 49);  
 }
 
-.investment-grade-value-2 p {
-    background: #1e57a4; 
+.investment-grade-value-D p {
+    background: rgb(243, 130, 49); 
 }
 
-.investment-grade-value-1 p {
-    background: #11325e;
+.investment-grade-value-E p {
+    background: rgb(194, 26, 36); 
 }

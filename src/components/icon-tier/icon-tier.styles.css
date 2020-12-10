@@ -1,16 +1,94 @@
-.icon-tier-col div {
+.icon-tier-col div  {
     display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-size: cover;
-    background-image: url(https://passportindex.global/SVG/icon-money.svg);
+    min-width: 3em;
+    height: 2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+
+
+
+.icon-tier-col.icon-tier-1 div {
+    background-image: url(https://passportindex.global/SVG/icon-29.svg);
+} 
+
+.icon-tier-col.icon-tier-2 div {
+    background-image: url(https://passportindex.global/SVG/icon-30.svg);
+    min-width: 3em;
+} 
+
+.icon-tier-col.icon-tier-3 div {
+    background-image: url(https://passportindex.global/SVG/icon-31.svg);
+    min-width: 4em;
+} 
+
+.icon-tier-col.icon-tier-4 div {
+    background-image: url(https://passportindex.global/SVG/icon-32.svg);
+    min-width: 5em;
+} 
+.icon-tier-col.icon-tier-5 div {
+    background-image: url(https://passportindex.global/SVG/icon-33.svg);
+    min-width: 5em;
+
+} 
+
+.icon-tier-hdi.icon-tier-5 div {
+    background-image: url(https://passportindex.global/SVG/icon-19.svg);
+
+}
+
+.icon-tier-hdi.icon-tier-4 div {
+    background-image: url(https://passportindex.global/SVG/icon-20.svg);
+
+}
+
+.icon-tier-hdi.icon-tier-3 div {
+    background-image: url(https://passportindex.global/SVG/icon-21.svg);
+
+}
+
+.icon-tier-hdi.icon-tier-2 div {
+    background-image: url(https://passportindex.global/SVG/icon-22.svg);
+
+}
+
+.icon-tier-hdi.icon-tier-1 div {
+    background-image: url(https://passportindex.global/SVG/icon-23.svg);
+}
+
+.icon-tier-freedom.icon-tier-5 div {
+    background-image: url(https://passportindex.global/SVG/icon-24.svg);
+
+}
+
+.icon-tier-freedom.icon-tier-4 div {
+    background-image: url(https://passportindex.global/SVG/icon-25.svg);
+
+}
+
+.icon-tier-freedom.icon-tier-3 div {
+    background-image: url(https://passportindex.global/SVG/icon-26.svg);
+
+}
+
+.icon-tier-freedom.icon-tier-2 div {
+    background-image: url(https://passportindex.global/SVG/icon-27.svg);
+
+}
+
+.icon-tier-freedom.icon-tier-1 div {
+    background-image: url(https://passportindex.global/SVG/icon-28.svg);
+
+}
+
 
 
 .icon-tier-hdi div {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     background-size: cover;
     background-image: url(https://passportindex.global/SVG/icon-smile.svg);
 }
@@ -18,8 +96,8 @@
 
 .icon-tier-freedom div {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     background-size: cover;
-    background-image: url(https://passportindex.global/SVG/icon-dove.svg);
 }
+
