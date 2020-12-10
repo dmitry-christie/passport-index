@@ -277,7 +277,7 @@ class CountryPage extends Component {
                   ${this.state.country.investment_gdp_pc}
                 </div>
                 <div className="country-table-header-item">
-                  {this.state.country.investment_tax_index}
+                <IconPersonalTax value={this.state.country.investment_tax_display} />
                 </div>
                 <div className="country-table-header-item">
                 <IconInvestementGrade value={this.state.country.investment_vcpe_display} />
