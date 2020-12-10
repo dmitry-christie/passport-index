@@ -10,11 +10,11 @@
 
 
 
-.icon-tier-col.icon-tier-1 div {
+.icon-tier-col.icon-tier-5 div {
     background-image: url(https://passportindex.global/SVG/icon-29.svg);
 } 
 
-.icon-tier-col.icon-tier-2 div {
+.icon-tier-col.icon-tier-4 div {
     background-image: url(https://passportindex.global/SVG/icon-30.svg);
     min-width: 3em;
 } 
@@ -24,11 +24,11 @@
     min-width: 4em;
 } 
 
-.icon-tier-col.icon-tier-4 div {
+.icon-tier-col.icon-tier-2 div {
     background-image: url(https://passportindex.global/SVG/icon-32.svg);
     min-width: 5em;
 } 
-.icon-tier-col.icon-tier-5 div {
+.icon-tier-col.icon-tier-1 div {
     background-image: url(https://passportindex.global/SVG/icon-33.svg);
     min-width: 5em;
 

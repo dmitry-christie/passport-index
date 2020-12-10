@@ -14,6 +14,11 @@ import { Icon } from "../../components/icon/icon.component";
 import IconInvestementGrade from '../../components/icon-investment-grade/icon-investment-grade.component';
 
 
+import IconTier from "../../components/icon-tier/icon-tier.component";
+import IconPersonalTax from '../../components/icon-personal-tax/icon-personal-tax.component';
+
+
+
 class CountryPage extends Component {
   componentDidMount() {
     var countryDataUrlBase =
@@ -303,13 +308,16 @@ class CountryPage extends Component {
                   {this.state.country.retire_rank}
                 </div>
                 <div className="country-table-header-item">
-                  {this.state.country.retire_col_tier}
+                <IconTier type="col" value={this.state.country.retire_col_tier} />
+
                 </div>
                 <div className="country-table-header-item">
-                  {this.state.country.retire_hdi_tier}
+                <IconTier type="hdi" value={this.state.country.retire_hdi_tier} />
+
                 </div>
                 <div className="country-table-header-item">
-                  {this.state.country.retire_freedom_tier}
+                  <IconTier type="freedom" value={this.state.country.retire_freedom_tier} />
+
                 </div>
               </div>
             </div>
